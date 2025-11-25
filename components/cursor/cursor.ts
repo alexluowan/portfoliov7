@@ -88,10 +88,12 @@ function setupCursorState(
  * @returns [CursorState, CursorCleanup]
  */
 
-const isTouchDevice: boolean =
-  !!navigator.maxTouchPoints || "ontouchstart" in document.documentElement;
-
 export function setupCursor() {
+  // Check for touch device only on client side
+  const isTouchDevice: boolean =
+    typeof window !== 'undefined' && 
+    (!!navigator.maxTouchPoints || "ontouchstart" in document.documentElement);
+  
   const [allCursorElm, removeAllCursorElm] = createCursorElements();
   const useTouchInput: UseTouchInput = { value: isTouchDevice };
 
