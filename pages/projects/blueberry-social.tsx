@@ -67,31 +67,23 @@ export default function BlueberrySocialCaseStudy() {
 
             {/* Case Study Content Sections */}
             <section className="space-y-4 md:space-y-6 mt-8 md:mt-12">
-              <h2 className="text-xl md:text-2xl">Overview</h2>
-              <div className="space-y-4 text-sm md:text-base leading-relaxed">
-                <p>
-                  {/* Add your overview content here */}
-                  This is where you&apos;ll add the overview of the Blueberry Social project.
-                </p>
+              <div className="flex flex-col gap-4">
+                <div className="subheader text-xs md:text-sm">THE PROBLEM</div>
+                <h2 className="text-xl md:text-2xl">E-commerce brands lose sales in Instagram comments. A customer asks &quot;Do you ship to Canada?&quot; By the time someone replies 6 hours later, they&apos;ve bought elsewhere.
+                </h2>
               </div>
             </section>
 
             <section className="space-y-4 md:space-y-6">
-              <h2 className="text-xl md:text-2xl">The Challenge</h2>
+              <div className="flex flex-col gap-4">
+                <div className="subheader text-xs md:text-sm">SOLUTION</div>
+                <h2 className="text-xl md:text-2xl">Trust Through Inline Learning
+                </h2>
+              </div>
               <div className="space-y-4 text-sm md:text-base leading-relaxed">
                 <p>
                   {/* Add your challenge content here */}
                   Describe the problem or challenge that Blueberry Social addresses.
-                </p>
-              </div>
-            </section>
-
-            <section className="space-y-4 md:space-y-6">
-              <h2 className="text-xl md:text-2xl">The Solution</h2>
-              <div className="space-y-4 text-sm md:text-base leading-relaxed">
-                <p>
-                  {/* Add your solution content here */}
-                  Explain the design solution and approach you took.
                 </p>
               </div>
             </section>
