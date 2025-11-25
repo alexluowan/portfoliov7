@@ -1,5 +1,6 @@
 // components/ProjectCard.tsx
 import Image from "next/image";
+import Link from "next/link";
 import { memo, useRef, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import clsx from "clsx";
@@ -9,6 +10,7 @@ export type ProjectCardProps = {
     mediaType?: "image" | "video";
     badges?: string[];
     className?: string;
+    href?: string;
 };
 
 const containerVariants = {
@@ -31,6 +33,7 @@ function ProjectCard({
                          mediaType = "image",
                          badges = [],
                          className,
+                         href,
                      }: ProjectCardProps) {
     const videoRef = useRef<HTMLVideoElement>(null);
     const [isMobile, setIsMobile] = useState(false);
@@ -72,9 +75,9 @@ function ProjectCard({
         }
     }, [mediaType]);
 
-    return (
+    const cardContent = (
         <motion.div
-            className={clsx("w-full aspect-video relative overflow-hidden", className)}
+            className={clsx("w-full aspect-video relative overflow-hidden", href ? className?.replace("hover-target-big", "").trim() : className)}
             variants={containerVariants}
             initial="rest"
             animate={isClient && isMobile ? "hover" : "rest"}
@@ -118,6 +121,16 @@ function ProjectCard({
             )}
         </motion.div>
     );
+
+    if (href) {
+        return (
+            <Link href={href} className={clsx("block", className?.includes("hover-target-big") ? "hover-target-big" : "")}>
+                {cardContent}
+            </Link>
+        );
+    }
+
+    return cardContent;
 }
 
 export default memo(ProjectCard);

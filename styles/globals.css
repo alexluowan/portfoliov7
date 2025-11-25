@@ -36,8 +36,18 @@ body {
   }
 }
 
+p {
+  font-size: 15px;
+  line-height: 18px;
+  color: #6D6C6C;
+}
+
 h1, h2, h3 {
   color: #252525;
+}
+
+h1 {
+  font-size: 32px;
 }
 
 h2 {

@@ -74,6 +74,7 @@ export default function Home() {
               mediaType="video"
               badges={["Blueberry Social", "Product Design"]}
               className="hover-target-big"
+              href="/projects/blueberry-social"
             />
           </div>
         </div>
