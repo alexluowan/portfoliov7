@@ -54,7 +54,13 @@ export function stylesheet(elm: HTMLElement, stylesheet: CSSStyleConfig) {
   elm.style.transform = transformStr;
 
   Object.keys(pureCSSStyle).forEach((styleKey) => {
-    (elm.style as any)[styleKey] = (pureCSSStyle as any)[styleKey];
+    const key = styleKey as string;
+    const value = pureCSSStyle[key as keyof typeof pureCSSStyle];
+    if (value !== undefined && typeof key === 'string') {
+      // Convert camelCase to kebab-case for CSS properties
+      const cssKey = key.replace(/([A-Z])/g, '-$1').toLowerCase();
+      elm.style.setProperty(cssKey, String(value));
+    }
   });
 }
 

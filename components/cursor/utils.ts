@@ -12,8 +12,8 @@ export interface UseTouchInput {
 export function createHoverState(
   selector: string,
   {
-    onMouseEnter = (target: HTMLElement) => {},
-    onMouseLeave = (target: HTMLElement) => {},
+    onMouseEnter = (_target: HTMLElement) => {},
+    onMouseLeave = (_target: HTMLElement) => {},
   },
   isUsingTouch: UseTouchInput
 ) {
@@ -49,7 +49,7 @@ export function createHoverState(
 
 export function detectOffscreen(
   {
-    onEnterScreen = (e: MouseEvent) => {},
+    onEnterScreen = (_e: MouseEvent) => {},
     onExitScreen = () => {},
   },
   isUsingTouch: UseTouchInput
@@ -83,7 +83,7 @@ export function debounce(callback: () => void, millisec: number) {
 }
 
 export function observeMouseMove(
-  { onMouseMove = (e: MouseEvent) => {}, onMouseStop = () => {} },
+  { onMouseMove = (_e: MouseEvent) => {}, onMouseStop = () => {} },
   isUsingTouch: UseTouchInput
 ) {
   const MOUSE_STOP_DELAY = 50;
@@ -109,7 +109,8 @@ export function observeMouseMove(
 export function setupIsMouseDown(
   { onMouseDown = () => {}, onMouseUp = () => {} },
   _isUsingTouch: UseTouchInput
-) {
+): () => void {
+  // _isUsingTouch parameter kept for API consistency but not used
   window.addEventListener("mousedown", onMouseDown);
   window.addEventListener("mouseup", onMouseUp);
   return () => {
