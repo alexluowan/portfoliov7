@@ -12,7 +12,7 @@ type TransformationConfig = {
   rotateZ: number;
 };
 
-type CSSStyleConfig = Partial<CSSStyleDeclaration> &
+type CSSStyleConfig = Omit<Partial<CSSStyleDeclaration>, 'x' | 'y' | 'scaleX' | 'scaleY' | 'skewX' | 'skewY' | 'rotateX' | 'rotateY' | 'rotateZ'> &
   Partial<TransformationConfig>;
 
 function emptyWhenUndefined(
@@ -54,7 +54,7 @@ export function stylesheet(elm: HTMLElement, stylesheet: CSSStyleConfig) {
   elm.style.transform = transformStr;
 
   Object.keys(pureCSSStyle).forEach((styleKey) => {
-    elm.style[styleKey] = pureCSSStyle[styleKey];
+    (elm.style as any)[styleKey] = (pureCSSStyle as any)[styleKey];
   });
 }
 

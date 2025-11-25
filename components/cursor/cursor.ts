@@ -72,9 +72,7 @@ function setupCursorState(
   }
 
   function mutateCursorState(newInfo: Partial<CursorState>) {
-    (Object.keys(newInfo) as Array<keyof CursorState>).forEach((infoKey) => {
-      cursorState[infoKey] = newInfo[infoKey]!;
-    });
+    Object.assign(cursorState, newInfo);
 
     // trigger re-render when setting cursor info
     triggerRender();

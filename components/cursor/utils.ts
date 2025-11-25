@@ -73,7 +73,7 @@ export function detectOffscreen(
 }
 
 export function debounce(callback: () => void, millisec: number) {
-  let timeoutId: number;
+  let timeoutId: ReturnType<typeof setTimeout>;
   function triggerDebounce() {
     if (timeoutId) clearTimeout(timeoutId);
     timeoutId = setTimeout(callback, millisec);
