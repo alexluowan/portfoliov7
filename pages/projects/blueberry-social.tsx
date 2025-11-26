@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { Lightning, Target, Handshake, Clock, Sparkle, ShieldCheck, ArrowRight } from '@phosphor-icons/react';
 
 export default function BlueberrySocialCaseStudy() {
 
@@ -183,7 +182,7 @@ export default function BlueberrySocialCaseStudy() {
             </section>
 
             {/* IMPACT - After showing solution */}
-            <section className="mt-16 md:mt-20">
+            <section className="mt-20 md:mt-28">
               <div className="flex flex-col gap-4">
                 <div className="subheader text-xs md:text-sm">OUTCOMES</div>
                 <h2 className="text-xl md:text-2xl">Blueberry Social is live and gaining traction with e-commerce teams.</h2>
@@ -209,7 +208,7 @@ export default function BlueberrySocialCaseStudy() {
             </section>
 
             {/* THE CHALLENGE */}
-            <section className="mt-16 md:mt-20">
+            <section className="mt-20 md:mt-28">
               <div className="flex flex-col gap-4">
                 <div className="subheader text-xs md:text-sm">THE CHALLENGE</div>
                 <h2 className="text-xl md:text-2xl">E-commerce teams were drowning in social media comments across multiple platforms.</h2>
@@ -246,7 +245,7 @@ export default function BlueberrySocialCaseStudy() {
             </section>
 
             {/* THE PIVOT */}
-            <section className="mt-16 md:mt-20">
+            <section className="mt-20 md:mt-28">
               <div className="flex flex-col gap-4">
                 <div className="subheader text-xs md:text-sm">THE PIVOT</div>
                 <h2 className="text-xl md:text-2xl">Halfway through the project, everything changed.</h2>
@@ -266,24 +265,21 @@ export default function BlueberrySocialCaseStudy() {
             </section>
 
             {/* UNDERSTANDING USERS */}
-            <section className="mt-16 md:mt-20">
+            <section className="mt-20 md:mt-28">
               <div className="flex flex-col gap-4">
                 <div className="subheader text-xs md:text-sm">UNDERSTANDING USERS</div>
                 <h2 className="text-xl md:text-2xl">What growth teams actually needed.</h2>
               </div>
-              <div className="flex flex-col md:flex-row gap-6 md:gap-0 md:justify-between mt-8 md:mt-12">
+              <div className="flex flex-col md:flex-row gap-8 md:gap-0 md:justify-between mt-8 md:mt-12">
                 <div className="space-y-3 md:max-w-[30%]">
-                  <Lightning size={48} weight="duotone" className="text-black" />
                   <h3 className="font-medium text-base">Speed without sacrificing brand</h3>
                   <p className="text-sm text-gray-600">&quot;The more the AI can mimic our brand voice, the better. Generic responses are a dealbreaker.&quot;</p>
                 </div>
                 <div className="space-y-3 md:max-w-[30%]">
-                  <Target size={48} weight="duotone" className="text-black" />
                   <h3 className="font-medium text-base">Clarity over complexity</h3>
                   <p className="text-sm text-gray-600">&quot;Too many options feels like work, not help. I want the tool to be intuitive.&quot;</p>
                 </div>
                 <div className="space-y-3 md:max-w-[30%]">
-                  <Handshake size={48} weight="duotone" className="text-black" />
                   <h3 className="font-medium text-base">Trust takes time</h3>
                   <p className="text-sm text-gray-600">&quot;I don&apos;t fully trust AI yet, but I&apos;m open to automation once I trust it over time.&quot;</p>
                 </div>
@@ -291,7 +287,7 @@ export default function BlueberrySocialCaseStudy() {
             </section>
 
             {/* DESIGN DECISIONS */}
-            <section className="mt-16 md:mt-20">
+            <section className="mt-20 md:mt-28">
               <div className="flex flex-col gap-4">
                 <div className="subheader text-xs md:text-sm">DESIGN DECISIONS</div>
                 <h2 className="text-xl md:text-2xl">How might we build trust in AI automation?</h2>
@@ -306,26 +302,22 @@ export default function BlueberrySocialCaseStudy() {
                   Every question we asked was a barrier between the user and value. We ruthlessly cut everything non-essential.
                 </p>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-                <div className="space-y-4">
-                  <div className="bg-gray-50 p-6 rounded-lg">
-                    <div className="text-xs font-medium text-gray-500 mb-2">EXPLORATION 1</div>
-                    <h4 className="font-medium mb-2">ChatGPT-style interface</h4>
-                    <p className="text-sm text-gray-600">Natural conversation, but API restrictions made it complex. Too slow for our timeline.</p>
-                  </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                <div className="space-y-2">
+                  <div className="text-xs font-medium text-gray-500 uppercase tracking-wide">Exploration 1</div>
+                  <h4 className="font-medium mb-2">ChatGPT-style interface</h4>
+                  <p className="text-sm text-gray-600">Natural conversation, but API restrictions made it complex. Too slow for our timeline.</p>
                 </div>
-                <div className="space-y-4">
-                  <div className="bg-gray-50 p-6 rounded-lg">
-                    <div className="text-xs font-medium text-gray-500 mb-2">EXPLORATION 2</div>
-                    <h4 className="font-medium mb-2">Sequential walkthrough</h4>
-                    <p className="text-sm text-gray-600">&quot;I prefer that it&apos;s all in one. Otherwise I wouldn&apos;t know when it will end.&quot; Users felt impatient.</p>
-                  </div>
+                <div className="space-y-2">
+                  <div className="text-xs font-medium text-gray-500 uppercase tracking-wide">Exploration 2</div>
+                  <h4 className="font-medium mb-2">Sequential walkthrough</h4>
+                  <p className="text-sm text-gray-600">&quot;I prefer that it&apos;s all in one. Otherwise I wouldn&apos;t know when it will end.&quot; Users felt impatient.</p>
                 </div>
               </div>
-              <div className="bg-blue-50 border-l-4 border-blue-500 p-6 mt-6">
-                <div className="text-xs font-medium text-blue-700 mb-2">FINAL SOLUTION</div>
+              <div className="mt-8 space-y-2">
+                <div className="text-xs font-medium text-gray-500 uppercase tracking-wide">Final Solution</div>
                 <h4 className="font-medium mb-2">Reduce friction, deliver value instantly</h4>
-                <p className="text-sm text-gray-700">Connect Meta Business Account, add basic brand info, and you&apos;re in. Users saw actual Instagram comments with AI-generated replies within two minutes.</p>
+                <p className="text-sm text-gray-600">Connect Meta Business Account, add basic brand info, and you&apos;re in. Users saw actual Instagram comments with AI-generated replies within two minutes.</p>
               </div>
             </section>
 
@@ -365,63 +357,46 @@ export default function BlueberrySocialCaseStudy() {
                 </p>
               </div>
               <div className="mt-8 space-y-6">
-                <div className="flex gap-4 items-start">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center">
-                    <Sparkle size={20} weight="duotone" className="text-black" />
-                  </div>
-                  <div className="flex-1 pt-1">
-                    <h4 className="font-medium text-sm mb-1">Show AI reasoning</h4>
-                    <p className="text-sm text-gray-600">Suggested responses explained why, based on brand guidelines.</p>
-                  </div>
+                <div>
+                  <h4 className="font-medium text-sm mb-2">Show AI reasoning</h4>
+                  <p className="text-sm text-gray-600">Suggested responses explained why, based on brand guidelines.</p>
                 </div>
-                <div className="flex gap-4 items-start">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center">
-                    <Clock size={20} weight="duotone" className="text-black" />
-                  </div>
-                  <div className="flex-1 pt-1">
-                    <h4 className="font-medium text-sm mb-1">Make learning visible</h4>
-                    <p className="text-sm text-gray-600">When users edited suggestions, we showed the AI was adapting.</p>
-                  </div>
+                <div>
+                  <h4 className="font-medium text-sm mb-2">Make learning visible</h4>
+                  <p className="text-sm text-gray-600">When users edited suggestions, we showed the AI was adapting.</p>
                 </div>
-                <div className="flex gap-4 items-start">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center">
-                    <ShieldCheck size={20} weight="duotone" className="text-black" />
-                  </div>
-                  <div className="flex-1 pt-1">
-                    <h4 className="font-medium text-sm mb-1">Progressive disclosure</h4>
-                    <p className="text-sm text-gray-600">Advanced rules available for power users, but not required.</p>
-                  </div>
+                <div>
+                  <h4 className="font-medium text-sm mb-2">Progressive disclosure</h4>
+                  <p className="text-sm text-gray-600">Advanced rules available for power users, but not required.</p>
                 </div>
               </div>
             </section>
 
             {/* KEY BREAKTHROUGH */}
-            <section className="mt-16 md:mt-20">
+            <section className="mt-20 md:mt-28">
               <div className="flex flex-col gap-4">
                 <div className="subheader text-xs md:text-sm">KEY BREAKTHROUGH</div>
                 <h2 className="text-xl md:text-2xl">Progressive disclosure over split-screen</h2>
               </div>
-              <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="mt-8 space-y-6">
                 <div className="space-y-2">
                   <div className="text-xs font-medium text-gray-500 uppercase tracking-wide">Before</div>
-                  <p className="text-sm">
+                  <p className="text-sm text-gray-600">
                     Split interface (voice guidelines left, live testing right) caused constant context-switching.
                   </p>
                 </div>
-                <div className="flex items-center justify-center">
-                  <ArrowRight size={32} weight="bold" className="text-gray-400" />
-                </div>
                 <div className="space-y-2">
                   <div className="text-xs font-medium text-gray-500 uppercase tracking-wide">After</div>
-                  <p className="text-sm">
+                  <p className="text-sm text-gray-600">
                     Single-column layout for defining voice + dedicated preview modal for validation.
                   </p>
                 </div>
-              </div>
-              <div className="mt-6 p-4 bg-green-50 border-l-4 border-green-500 rounded">
-                <p className="text-sm font-medium text-green-900">
-                  Result: Clearer guidelines, fewer inconsistencies, 40% reduction in setup errors.
-                </p>
+                <div className="space-y-2">
+                  <div className="text-xs font-medium text-gray-500 uppercase tracking-wide">Result</div>
+                  <p className="text-sm text-gray-600">
+                    Clearer guidelines, fewer inconsistencies, 40% reduction in setup errors.
+                  </p>
+                </div>
               </div>
               {/* Before/After Comparison Image Placeholder */}
               <div className="w-full aspect-video bg-gray-100 mt-8 md:mt-12 flex items-center justify-center">
@@ -430,7 +405,7 @@ export default function BlueberrySocialCaseStudy() {
             </section>
 
             {/* REFLECTION */}
-            <section className="mt-16 md:mt-20 pb-12">
+            <section className="mt-20 md:mt-28 pb-16">
               <div className="flex flex-col gap-4">
                 <div className="subheader text-xs md:text-sm">REFLECTION</div>
                 <h2 className="text-xl md:text-2xl">What I learned</h2>
