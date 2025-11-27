@@ -68,6 +68,7 @@ export default function Home() {
               mediaType="video"
               badges={["88rising", "Product Design"]}
               className="hover-target-big"
+              href="/projects/88rising"
             />
             <ProjectCard
               mediaSrc="/projects/blueberry-social/videos/blueberrysizzle.mp4"
