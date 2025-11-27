@@ -38,6 +38,7 @@ function ProjectCard({
     const videoRef = useRef<HTMLVideoElement>(null);
     const [isMobile, setIsMobile] = useState(false);
     const [isClient, setIsClient] = useState(false);
+    const [isHovered, setIsHovered] = useState(false);
 
     // Check if device is mobile
     useEffect(() => {
@@ -75,13 +76,14 @@ function ProjectCard({
         }
     }, [mediaType]);
 
+    const shouldShowBadges = isMobile || isHovered;
+
     const cardContent = (
         <motion.div
             className={clsx("w-full aspect-video relative overflow-hidden", href ? className?.replace("hover-target-big", "").trim() : className)}
             variants={containerVariants}
             initial="rest"
-            animate={isClient && isMobile ? "hover" : "rest"}
-            whileHover={isClient && !isMobile ? "hover" : undefined}
+            animate={shouldShowBadges ? "hover" : "rest"}
         >
             {/* Media */}
             {mediaSrc && mediaType === "video" ? (
@@ -106,12 +108,11 @@ function ProjectCard({
 
             {/* Badges only */}
             {badges.length > 0 && (
-                <div className="absolute top-4 left-4 flex flex-col z-10 pointer-events-none">
+                <div className="absolute top-4 left-4 flex flex-col gap-1 z-10 pointer-events-none">
                     {badges.map((tag, i) => (
                         <motion.span
                             key={i}
                             variants={badgeVariants}
-                            animate={isClient && isMobile ? "hover" : undefined}
                             className="inline-block w-max whitespace-nowrap bg-white text-black text-xs px-2 py-1 shadow"
                         >
                             {tag}
@@ -124,13 +125,25 @@ function ProjectCard({
 
     if (href) {
         return (
-            <Link href={href} className={clsx("block", className?.includes("hover-target-big") ? "hover-target-big" : "")}>
+            <Link 
+                href={href} 
+                className={clsx("block", className?.includes("hover-target-big") ? "hover-target-big" : "")}
+                onMouseEnter={() => !isMobile && setIsHovered(true)}
+                onMouseLeave={() => !isMobile && setIsHovered(false)}
+            >
                 {cardContent}
             </Link>
         );
     }
 
-    return cardContent;
+    return (
+        <div
+            onMouseEnter={() => !isMobile && setIsHovered(true)}
+            onMouseLeave={() => !isMobile && setIsHovered(false)}
+        >
+            {cardContent}
+        </div>
+    );
 }
 
 export default memo(ProjectCard);
