@@ -308,7 +308,7 @@ export default function EightyEightRisingCaseStudy() {
                 <div>
                   <h3 className="font-medium text-base mb-2">Prototyping sells the vision</h3>
                   <p className="text-sm md:text-base text-gray-600">
-                    The language hover states and waveform calendar were prototyped in After Effects. High-fidelity motion made the concept feel real to stakeholders and users, generating excitement and validation faster than static screens ever could.
+                    The language hover states and waveform calendar were prototyped in Figma. Quick, fast prototyping made it easy to validate the concept with stakeholders and users, generating excitement and validation faster than static screens ever could.
                   </p>
                 </div>
                 <div>
