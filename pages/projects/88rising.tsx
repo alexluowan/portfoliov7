@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import GrowthGraph from '@/components/projects/GrowthGraph';
 
 export default function EightyEightRisingCaseStudy() {
 
@@ -87,6 +88,11 @@ export default function EightyEightRisingCaseStudy() {
                 <p>
                   But growth stalled—only <strong>0.43B views over the next 4 years</strong>. New artists weren&apos;t getting the reach early stars enjoyed, costing streams, ticket sales, and brand momentum.
                 </p>
+              </div>
+
+              {/* Interactive Growth Graph */}
+              <div className="mt-8 md:mt-12">
+                <GrowthGraph />
               </div>
             </section>
 
