@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function BlueberrySocialCaseStudy() {
 
@@ -81,7 +82,7 @@ export default function BlueberrySocialCaseStudy() {
             <section className="mt-12 md:mt-16">
               <div className="flex flex-col gap-4">
                 <div className="subheader text-xs md:text-sm">SOLUTION</div>
-                <h2 className="text-xl md:text-2xl">Blueberry Social: An AI-powered social media inbox that learns from your edits to maintain brand voice.</h2>
+                <h2 className="text-xl md:text-2xl">Blueberry Social: An AI-powered social media management platform for e-commerce brands.</h2>
               </div>
             </section>
 
@@ -90,17 +91,22 @@ export default function BlueberrySocialCaseStudy() {
               <div className="grid grid-cols-1 md:grid-cols-[60%_auto] md:gap-8 md:items-end">
                 {/* Mobile h3 - shows above video */}
                 <div className="md:hidden flex flex-col pb-6">
-                  <h3 className="mt-2 text-sm">Trust Through Inline Learning</h3>
+                  <h3 className="mt-2 text-sm">Manage All Comments from One Unified Inbox</h3>
                 </div>
-                {/* Image/Video */}
-                <div className="relative w-full aspect-video bg-gray-100 overflow-hidden">
-                  <div className="w-full h-full flex items-center justify-center">
-                    <span className="text-gray-400 text-sm">Side-by-side showing AI draft → User edit → &quot;Apply to future replies&quot; moment</span>
-                  </div>
+                {/* Video */}
+                <div className="relative w-full aspect-video overflow-hidden">
+                  <video
+                    src="/projects/blueberry-social/videos/inbox.mp4"
+                    muted
+                    loop
+                    playsInline
+                    autoPlay
+                    className="w-full h-auto"
+                  />
                 </div>
                 {/* Desktop h3 - shows on right */}
                 <div className="hidden md:flex flex-col h-fit">
-                  <h3 className="mt-2 text-sm">Trust Through Inline Learning</h3>
+                  <h3 className="mt-2 text-sm">Manage All Comments from One Unified Inbox</h3>
                 </div>
               </div>
             </section>
@@ -109,17 +115,22 @@ export default function BlueberrySocialCaseStudy() {
               <div className="grid grid-cols-1 md:grid-cols-[60%_auto] md:gap-8 md:items-end">
                 {/* Mobile h3 - shows above video */}
                 <div className="md:hidden flex flex-col pb-6">
-                  <h3 className="mt-2 text-sm">Hybrid Inbox: Scan Fast, Reply With Context</h3>
+                  <h3 className="mt-2 text-sm">Train Your Brand Voice in a Safe Sandbox</h3>
                 </div>
-                {/* GIF */}
-                <div className="relative w-full aspect-video bg-gray-100 overflow-hidden">
-                  <div className="w-full h-full flex items-center justify-center">
-                    <span className="text-gray-400 text-sm">GIF: Collapsing/expanding inbox flow</span>
-                  </div>
+                {/* Video */}
+                <div className="relative w-full aspect-video overflow-hidden">
+                  <video
+                    src="/projects/blueberry-social/videos/brandvoice.mp4"
+                    muted
+                    loop
+                    playsInline
+                    autoPlay
+                    className="w-full h-auto"
+                  />
                 </div>
                 {/* Desktop h3 - shows on right */}
                 <div className="hidden md:flex flex-col h-fit">
-                  <h3 className="mt-2 text-sm">Hybrid Inbox: Scan Fast, Reply With Context</h3>
+                  <h3 className="mt-2 text-sm">Train Your Brand Voice in a Safe Sandbox</h3>
                 </div>
               </div>
             </section>
@@ -128,55 +139,22 @@ export default function BlueberrySocialCaseStudy() {
               <div className="grid grid-cols-1 md:grid-cols-[60%_auto] md:gap-8 md:items-end">
                 {/* Mobile h3 - shows above video */}
                 <div className="md:hidden flex flex-col pb-6">
-                  <h3 className="mt-2 text-sm">Brand Voice That Learns From Real Edits</h3>
+                  <h3 className="mt-2 text-sm">Automate Safely with Human Oversight</h3>
                 </div>
-                {/* GIF */}
-                <div className="relative w-full aspect-video bg-gray-100 overflow-hidden">
-                  <div className="w-full h-full flex items-center justify-center">
-                    <span className="text-gray-400 text-sm">GIF: User editing a reply → Preview modal showing how tone applies to multiple scenarios</span>
-                  </div>
-                </div>
-                {/* Desktop h3 - shows on right */}
-                <div className="hidden md:flex flex-col h-fit">
-                  <h3 className="mt-2 text-sm">Brand Voice That Learns From Real Edits</h3>
-                </div>
-              </div>
-            </section>
-
-            <section className="mt-8 md:mt-12">
-              <div className="grid grid-cols-1 md:grid-cols-[60%_auto] md:gap-8 md:items-end">
-                {/* Mobile h3 - shows above video */}
-                <div className="md:hidden flex flex-col pb-6">
-                  <h3 className="mt-2 text-sm">Safe Automation With Clear Controls</h3>
-                </div>
-                {/* Image */}
-                <div className="relative w-full aspect-video bg-gray-100 overflow-hidden">
-                  <div className="w-full h-full flex items-center justify-center">
-                    <span className="text-gray-400 text-sm">IMAGE: Automation rule builder showing plain English → structured logic</span>
-                  </div>
+                {/* Video */}
+                <div className="relative w-full aspect-video overflow-hidden">
+                  <video
+                    src="/projects/blueberry-social/videos/automationrules.mp4"
+                    muted
+                    loop
+                    playsInline
+                    autoPlay
+                    className="w-full h-auto"
+                  />
                 </div>
                 {/* Desktop h3 - shows on right */}
                 <div className="hidden md:flex flex-col h-fit">
-                  <h3 className="mt-2 text-sm">Safe Automation With Clear Controls</h3>
-                </div>
-              </div>
-            </section>
-
-            <section className="mt-8 md:mt-12">
-              <div className="grid grid-cols-1 md:grid-cols-[60%_auto] md:gap-8 md:items-end">
-                {/* Mobile h3 - shows above video */}
-                <div className="md:hidden flex flex-col pb-6">
-                  <h3 className="mt-2 text-sm">Onboarding In Under 60 Seconds</h3>
-                </div>
-                {/* GIF */}
-                <div className="relative w-full aspect-video bg-gray-100 overflow-hidden">
-                  <div className="w-full h-full flex items-center justify-center">
-                    <span className="text-gray-400 text-sm">GIF: Store URL paste → Brand auto-populated → Meta connected → Inbox ready</span>
-                  </div>
-                </div>
-                {/* Desktop h3 - shows on right */}
-                <div className="hidden md:flex flex-col h-fit">
-                  <h3 className="mt-2 text-sm">Onboarding In Under 60 Seconds</h3>
+                  <h3 className="mt-2 text-sm">Automate Safely with Human Oversight</h3>
                 </div>
               </div>
             </section>
@@ -207,47 +185,46 @@ export default function BlueberrySocialCaseStudy() {
               </div>
             </section>
 
-            {/* THE CHALLENGE */}
+            {/* INITIAL OBSERVATIONS */}
             <section className="mt-20 md:mt-28">
               <div className="flex flex-col gap-4">
-                <div className="subheader text-xs md:text-sm">THE CHALLENGE</div>
+                <div className="subheader text-xs md:text-sm">INITIAL OBSERVATIONS</div>
                 <h2 className="text-xl md:text-2xl">E-commerce teams were drowning in social media comments across multiple platforms.</h2>
               </div>
-              <div className="mt-8 md:mt-12 space-y-6">
-                <div className="flex gap-4 items-start">
-                  <div className="flex-shrink-0 text-2xl font-light" style={{ color: '#252525' }}>
-                    01
+              <div className="mt-8 md:mt-12">
+                <h3 className="font-medium text-base mb-6">Pain Points</h3>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-8">
+                  <div className="space-y-3">
+                    <h4 className="text-lg md:text-xl font-normal">1. Response time kills sales</h4>
+                    <p className="text-sm md:text-base text-gray-600">A customer asks &quot;Do you ship to Canada?&quot; By the time someone replies 6 hours later, they&apos;ve bought elsewhere.</p>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="font-medium text-base mb-2">Response time kills sales</h3>
-                    <p className="text-sm text-gray-600">A customer asks &quot;Do you ship to Canada?&quot; By the time someone replies 6 hours later, they&apos;ve bought elsewhere.</p>
+                  <div className="space-y-3">
+                    <h4 className="text-lg md:text-xl font-normal">2. Brand voice inconsistency</h4>
+                    <p className="text-sm md:text-base text-gray-600">Generic AI responses feel robotic. Teams need automation that actually sounds like their brand.</p>
                   </div>
-                </div>
-                <div className="flex gap-4 items-start">
-                  <div className="flex-shrink-0 text-2xl font-light" style={{ color: '#252525' }}>
-                    02
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="font-medium text-base mb-2">Brand voice inconsistency</h3>
-                    <p className="text-sm text-gray-600">Generic AI responses feel robotic. Teams need automation that actually sounds like their brand.</p>
+                  <div className="space-y-3">
+                    <h4 className="text-lg md:text-xl font-normal">3. No one trusts AI... yet</h4>
+                    <p className="text-sm md:text-base text-gray-600">&quot;I&apos;m open to automation once I trust it over time.&quot; - Testing participant</p>
                   </div>
                 </div>
-                <div className="flex gap-4 items-start">
-                  <div className="flex-shrink-0 text-2xl font-light" style={{ color: '#252525' }}>
-                    03
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="font-medium text-base mb-2">No one trusts AI... yet</h3>
-                    <p className="text-sm text-gray-600">&quot;I&apos;m open to automation once I trust it over time.&quot; - Testing participant</p>
-                  </div>
+                
+                {/* Key Insight Callout */}
+                <div className="border-l-4 border-gray-300 pl-6 py-2 mb-8">
+                  <p className="text-base md:text-lg italic text-gray-800">
+                    Key Insight: E-commerce teams were already using generic AI tools like ChatGPT to draft responses, but they needed something that could maintain their brand voice consistently at scale.
+                  </p>
                 </div>
+
+                <p className="text-sm md:text-base text-gray-600 leading-relaxed">
+                  These pain points were not exactly surprising to us since we knew what the market looked like at that moment: generic AI tools that sounded robotic, scattered social media inboxes across platforms, and no way to maintain brand consistency. However, these user insights validated our solution and unique position in the market, as well as validated AI as a tool for social media management.
+                </p>
               </div>
             </section>
 
-            {/* THE PIVOT */}
+            {/* PIVOTING DIRECTION */}
             <section className="mt-20 md:mt-28">
               <div className="flex flex-col gap-4">
-                <div className="subheader text-xs md:text-sm">THE PIVOT</div>
+                <div className="subheader text-xs md:text-sm">PIVOTING DIRECTION</div>
                 <h2 className="text-xl md:text-2xl">Halfway through the project, everything changed.</h2>
               </div>
               <div className="mt-8 text-sm md:text-base leading-relaxed space-y-4">
@@ -259,8 +236,14 @@ export default function BlueberrySocialCaseStudy() {
                 </p>
               </div>
               {/* Timeline or visual showing pivot */}
-              <div className="w-full aspect-video bg-gray-100 mt-8 md:mt-12 flex items-center justify-center">
-                <span className="text-gray-400 text-sm">TIMELINE: Social listening → E-commerce comment management</span>
+              <div className="w-full mt-8 md:mt-12 relative">
+                <Image 
+                  src="/projects/blueberry-social/images/pivot.png" 
+                  alt="Timeline showing pivot from social listening to e-commerce comment management"
+                  width={1600}
+                  height={900}
+                  className="w-full h-auto"
+                />
               </div>
             </section>
 
@@ -286,11 +269,11 @@ export default function BlueberrySocialCaseStudy() {
               </div>
             </section>
 
-            {/* DESIGN DECISIONS */}
+            {/* DESIGN PROCESS */}
             <section className="mt-20 md:mt-28">
               <div className="flex flex-col gap-4">
-                <div className="subheader text-xs md:text-sm">DESIGN DECISIONS</div>
-                <h2 className="text-xl md:text-2xl">How might we build trust in AI automation?</h2>
+                <div className="subheader text-xs md:text-sm">DESIGN PROCESS</div>
+                <h2 className="text-xl md:text-2xl">How might we build trust in AI replies so teams feel confident letting automation handle customer conversations?</h2>
               </div>
             </section>
 
@@ -324,23 +307,35 @@ export default function BlueberrySocialCaseStudy() {
             {/* Decision 2: The Inbox */}
             <section className="mt-12 md:mt-16">
               <div className="flex flex-col gap-4">
-                <h3 className="text-lg font-medium">The Inbox: Making efficiency feel intuitive</h3>
+                <h3 className="text-lg font-medium">The Inbox: Modeled after Gmail for zero learning curve</h3>
                 <p className="text-sm md:text-base text-gray-600">
-                  During our first test, users were confused by terminology. We had to match their mental models.
+                  Users were confused by our initial complex filtering system. We modeled the inbox after Gmail, leveraging patterns users already know.
                 </p>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+              <div className="space-y-8 mt-8">
                 <div className="space-y-3">
-                  <div className="aspect-video bg-gray-100 flex items-center justify-center">
-                    <span className="text-gray-400 text-xs">Early inbox - cluttered</span>
+                  <div className="relative w-full">
+                    <Image 
+                      src="/projects/blueberry-social/images/inbox-before.png" 
+                      alt="Early inbox with too many filtering options and split-screen layout"
+                      width={1600}
+                      height={900}
+                      className="w-full h-auto border border-gray-200"
+                    />
                   </div>
-                  <p className="text-sm text-gray-600">❌ Too many filtering options. Users felt overwhelmed.</p>
+                  <p className="text-sm text-gray-600">Before: 7+ filtering categories and split-screen layout forced constant context-switching.</p>
                 </div>
                 <div className="space-y-3">
-                  <div className="aspect-video bg-gray-100 flex items-center justify-center">
-                    <span className="text-gray-400 text-xs">Revised inbox - focused</span>
+                  <div className="relative w-full">
+                    <Image 
+                      src="/projects/blueberry-social/images/inbox-after.png" 
+                      alt="Revised inbox with simplified categories and inline AI replies"
+                      width={1600}
+                      height={900}
+                      className="w-full h-auto border border-gray-200"
+                    />
                   </div>
-                  <p className="text-sm text-gray-600">✅ Smart defaults that surfaced what mattered most.</p>
+                  <p className="text-sm text-gray-600">After: Simplified to 3 Gmail-like states (Unreplied/Resolved/Spam). Users triaged 3x faster with zero learning curve.</p>
                 </div>
               </div>
               <div className="mt-6 text-sm italic text-gray-600">
@@ -372,13 +367,12 @@ export default function BlueberrySocialCaseStudy() {
               </div>
             </section>
 
-            {/* KEY BREAKTHROUGH */}
-            <section className="mt-20 md:mt-28">
+            {/* Key Breakthrough - now part of Design Process */}
+            <section className="mt-12 md:mt-16">
               <div className="flex flex-col gap-4">
-                <div className="subheader text-xs md:text-sm">KEY BREAKTHROUGH</div>
-                <h2 className="text-xl md:text-2xl">Progressive disclosure over split-screen</h2>
+                <h3 className="text-lg font-medium">Key Breakthrough: Progressive disclosure over split-screen</h3>
               </div>
-              <div className="mt-8 space-y-6">
+              <div className="mt-6 space-y-6">
                 <div className="space-y-2">
                   <div className="text-xs font-medium text-gray-500 uppercase tracking-wide">Before</div>
                   <p className="text-sm text-gray-600">
@@ -443,4 +437,5 @@ export default function BlueberrySocialCaseStudy() {
     </div>
   );
 }
+
 
